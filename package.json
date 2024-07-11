@@ -12,7 +12,9 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "openai": "^4.52.5"
+    "hunspell-spellchecker": "^1.0.2",
+    "openai": "^4.52.5",
+    "simple-spellchecker": "^1.0.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
