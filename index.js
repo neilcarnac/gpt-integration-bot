@@ -17,9 +17,9 @@ app.post('/chathelper', async (req, res) => {
   
       let systemMessage;
       if (style === 'professional') {
-        systemMessage = "You are a professional writing assistant. Rewrite the following text to sound more professional.";
+        systemMessage = "You are a professional writing assistant. Rewrite the following text to sound more professional. If there are grammatical errors, please correct them in the answer";
       } else if (style === 'casual') {
-        systemMessage = "You are a Casual Bot. Rewrite the following text to sound more casual in a more humanly way.";
+        systemMessage = "You are a Casual Bot. Rewrite the following text to sound more casual in a more humanly way. If there are grammatical errors, please correct them in the answer";
       } else {
         return res.status(400).json({
           success: false,
